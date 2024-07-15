@@ -5,11 +5,13 @@
 </script>
 
 {#snippet Card()}
-	<div class="flex h-fit w-full flex-row-reverse">
+	<div class="flex h-fit w-full flex-row-reverse mymd:flex-col">
 		<div class="w-full">
-			<img src={BridgeMan} alt="man in a bridge" />
+			<img src={BridgeMan} alt="man in a bridge" class="h-full bg-cover mymd:w-full" />
 		</div>
-		<div class="relative flex w-3/5 flex-col items-center justify-center gap-7 bg-black p-28">
+		<div
+			class="relative flex w-3/5 flex-col items-center justify-center gap-7 bg-black p-28 mymd:w-full"
+		>
 			<h1 class="text-4xl font-bold text-white">CREATE AND SHARE YOUR PHOTO STORIES.</h1>
 			<p class="text-sm text-gray-500">
 				Photosnap is a platform for photographers and visual storytellers. We make it easy to share
@@ -17,12 +19,12 @@
 			</p>
 			<a href="#" class="self-start text-sm font-semibold text-white">
 				<div class="flex w-full items-center justify-center gap-9">
-					GET AN INVITE
+					<span class="underline-animation"> GET AN INVITE </span>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						width="2em"
 						height="2em"
-						class="font-extralight text-gray-500"
+						class="bg-cover font-extralight text-gray-500"
 						viewBox="0 0 24 24"
 						{...$$props}
 					>
@@ -37,10 +39,34 @@
 					</svg>
 				</div>
 			</a>
-			<div class="top-50 bg-sideone absolute left-0 h-[60%] w-[0.5rem]"></div>
+			<div class="top-50 absolute left-0 h-[60%] w-[0.5rem] bg-sideone"></div>
 		</div>
 	</div>
 {/snippet}
 <main class="flex w-full items-center justify-center">
 	{@render Card()}
 </main>
+
+<style>
+	.underline-animation {
+		position: relative;
+		display: inline-block;
+	}
+
+	.underline-animation::after {
+		content: '';
+		position: absolute;
+		width: 0;
+		height: 2px;
+		bottom: -2px;
+		left: 0;
+		background-color: white;
+		visibility: hidden;
+		transition: all 0.3s ease-in-out;
+	}
+
+	.underline-animation:hover::after {
+		visibility: visible;
+		width: 100%;
+	}
+</style>
