@@ -1,10 +1,13 @@
 <script>
+	import { fly } from 'svelte/transition';
+
 	import { Button } from '$lib/components/ui/button';
 	import { Separator } from '$lib/components/ui/separator';
 
 	import logo from '$assets/logo.svg';
 	import menuIcon from '$assets/shared/mobile/menu.svg';
 	import closeIcon from '$assets/shared/mobile/close.svg';
+	import { cubicInOut } from 'svelte/easing';
 	let isOpen = $state(false);
 
 	function toggleMenu() {
@@ -40,17 +43,21 @@
 					class:after:-rotate-45={isOpen}
 				></div>
 			</Button>
-			<section
-				class="absolute left-0 top-20 hidden min-h-screen w-full flex-col items-center justify-center gap-9 bg-white mymd:flex"
-			>
-				<nav class="flex flex-col items-center justify-center gap-7 text-4xl font-semibold">
-					<a href="#" class="duration-600 transition ease-in-out hover:opacity-30">STORIES</a>
-					<a href="#" class="duration-600 transition ease-in-out hover:opacity-30">FEATURES</a>
-					<a href="#" class="duration-600 transition ease-in-out hover:opacity-30">PRICING</a>
-				</nav>
-				<Separator class="w-[80%] bg-mygray-dark" />
-				<Button variant="default" class="w-[80%] rounded-none p-7 text-2xl">GET AN INVITE</Button>
-			</section>
+
+			{#if isOpen}
+				<section
+					transition:fly={{ y: -100, duration: 500, easing: cubicInOut }}
+					class="absolute left-0 top-20 hidden min-h-screen w-full flex-col items-center justify-center gap-9 bg-white mymd:flex"
+				>
+					<nav class="flex flex-col items-center justify-center gap-7 text-4xl font-semibold">
+						<a href="#" class="duration-600 transition ease-in-out hover:opacity-30">STORIES</a>
+						<a href="#" class="duration-600 transition ease-in-out hover:opacity-30">FEATURES</a>
+						<a href="#" class="duration-600 transition ease-in-out hover:opacity-30">PRICING</a>
+					</nav>
+					<Separator class="w-[80%] bg-mygray-dark" />
+					<Button variant="default" class="w-[80%] rounded-none p-7 text-2xl">GET AN INVITE</Button>
+				</section>
+			{/if}
 		</div>
 	</div>
 {/snippet}
