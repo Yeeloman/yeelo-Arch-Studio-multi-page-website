@@ -103,7 +103,7 @@
 			{@render miniCard(content)}
 		{/each}
 	</div>
-	<div class="my-32 flex w-full items-center justify-between gap-5 px-24">
+	<div class="my-32 flex w-full items-center justify-between gap-5 px-24 mymd:flex-col">
 		{#each smallSections as section}
 			{@render smallSection(section)}
 		{/each}

@@ -29,7 +29,7 @@
 		</a>
 		<div class="flex w-full items-center justify-between mymd:hidden">
 			<nav class="space-x-7 text-sm font-semibold">
-				<a href="#" class="duration-600 transition ease-in-out hover:opacity-30">STORIES</a>
+				<a href="/stories" class="duration-600 transition ease-in-out hover:opacity-30">STORIES</a>
 				<a href="#" class="duration-600 transition ease-in-out hover:opacity-30">FEATURES</a>
 				<a href="#" class="duration-600 transition ease-in-out hover:opacity-30">PRICING</a>
 			</nav>
@@ -42,9 +42,9 @@
 					class="absolute h-1 w-8 rounded bg-black transition-all duration-100 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-black before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-black after:transition-all after:duration-500 after:content-['']"
 					class:bg-transparent={isOpen}
 					class:rotate-[720deg]={isOpen}
-					class:before:translate-y-0={isOpen}
+					class:before:translate-y-1={isOpen}
 					class:before:rotate-45={isOpen}
-					class:after:translate-y-0={isOpen}
+					class:after:translate-y-1={isOpen}
 					class:after:-rotate-45={isOpen}
 				></div>
 			</Button>
