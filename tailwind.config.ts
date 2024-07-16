@@ -78,7 +78,9 @@ const config: Config = {
         'mymd': { 'max': "1000px" },
       },
       backgroundImage: {
-        "sideone": "linear-gradient(#5a77ff,#bc7198,#ffc593)"
+        "sideone": "linear-gradient(#5a77ff,#bc7198,#ffc593)",
+        "lightone": "linear-gradient(#AF7C66, #66af7c, #6699af)",
+        "notsolightone": 'linear-gradient(#8a437e, #438a73, #8a5043)'
       }
     }
   },

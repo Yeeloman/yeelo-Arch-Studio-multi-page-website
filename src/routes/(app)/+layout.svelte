@@ -36,9 +36,9 @@
 					class="absolute h-1 w-8 rounded bg-black transition-all duration-100 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-black before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-black after:transition-all after:duration-500 after:content-['']"
 					class:bg-transparent={isOpen}
 					class:rotate-[720deg]={isOpen}
-					class:before:translate-y-1={isOpen}
+					class:before:translate-y-2={isOpen}
 					class:before:rotate-45={isOpen}
-					class:after:translate-y-1={isOpen}
+					class:after:translate-y-2={isOpen}
 					class:after:-rotate-45={isOpen}
 				></div>
 			</Button>
