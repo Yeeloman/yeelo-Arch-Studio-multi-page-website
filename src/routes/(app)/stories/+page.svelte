@@ -42,8 +42,8 @@
 
 <main class="flex w-full flex-col items-center justify-center">
 	<div class="relative w-full">
-		<img src={mountainBackground} alt="moon of appalacia" class="brightness-0" />
-		<div class="absolute top-1/2 text-start text-white">
+		<img src={mountainBackground} alt="moon of appalacia" />
+		<div class="absolute left-32 top-1/2 w-[30%] text-start text-white">
 			<p>LAST MONTH'S FEATURED STORY</p>
 			<h1>HAZY FULL MOON OF APPALACHIA</h1>
 			<p>March 2nd 2020 by John Appleseed</p>
