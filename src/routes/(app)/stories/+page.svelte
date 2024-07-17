@@ -3,6 +3,47 @@
 	import Separator from '$lib/components/ui/separator/separator.svelte';
 </script>
 
+<!-- big background section -->
+{#snippet bigBackground(image)}
+	<div class="relative h-auto w-full mymd:h-[590px]">
+		<img src={image} alt="moon of appalacia" class="h-full w-full object-cover" />
+		<div
+			class="absolute left-0 top-0 flex w-[590px] flex-col items-start justify-start gap-5 p-28 text-start text-white"
+		>
+			<p class="text-md font-semibold">LAST MONTH'S FEATURED STORY</p>
+			<h1 class="text-5xl font-semibold">HAZY FULL MOON OF APPALACHIA</h1>
+			<p class="text-md font-thin">
+				March 2nd 2020 <span class="font-semibold">by John Appleseed</span>
+			</p>
+			<p class="text-sm font-semibold text-gray-300/50">
+				The dissected plateau area, while not actually made up of geological mountains, is popularly
+				called "mountains," especially in eastern Kentucky and West Virginia, and while the ridges
+				are not high, the terrain is extremely rugged.
+			</p>
+			<a href="#" class="flex w-fit items-center justify-start gap-5">
+				<span class="underline-animation font-semibold text-white"> READ THE STORY </span>
+
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="2em"
+					height="2em"
+					class="bg-cover font-extralight text-gray-500"
+					viewBox="0 0 24 24"
+				>
+					<path
+						fill="none"
+						stroke="currentColor"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						stroke-width="1.5"
+						d="m18 8l4 4m0 0l-4 4m4-4H2"
+					/>
+				</svg>
+			</a>
+		</div>
+	</div>
+{/snippet}
+
 <!-- mini card snippet -->
 {#snippet miniCard({ image, title, author })}
 	<div
@@ -41,39 +82,7 @@
 {/snippet}
 
 <main class="flex w-full flex-col items-center justify-center">
-	<div class="relative w-full">
-		<img src={mountainBackground} alt="moon of appalacia" />
-		<div class="absolute left-32 top-1/2 w-[30%] text-start text-white">
-			<p>LAST MONTH'S FEATURED STORY</p>
-			<h1>HAZY FULL MOON OF APPALACHIA</h1>
-			<p>March 2nd 2020 by John Appleseed</p>
-			<p>
-				The dissected plateau area, while not actually made up of geological mountains, is popularly
-				called "mountains," especially in eastern Kentucky and West Virginia, and while the ridges
-				are not high, the terrain is extremely rugged.
-			</p>
-			<a href="#" class="flex w-fit items-center justify-start gap-5">
-				<span class="underline-animation font-semibold text-white"> READ THE STORY </span>
-
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					width="2em"
-					height="2em"
-					class="bg-cover font-extralight text-gray-500"
-					viewBox="0 0 24 24"
-				>
-					<path
-						fill="none"
-						stroke="currentColor"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-						stroke-width="1.5"
-						d="m18 8l4 4m0 0l-4 4m4-4H2"
-					/>
-				</svg>
-			</a>
-		</div>
-	</div>
+	{@render bigBackground(mountainBackground)}
 </main>
 
 <style>
