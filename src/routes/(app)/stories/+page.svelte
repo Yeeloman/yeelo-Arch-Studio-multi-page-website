@@ -1,6 +1,9 @@
 <script>
 	import mountainBackground from '$assets/stories/desktop/moon-of-appalacia.jpg';
 	import Separator from '$lib/components/ui/separator/separator.svelte';
+
+	let { data } = $props();
+	const { cardsList } = data;
 </script>
 
 <!-- big background section -->
@@ -45,7 +48,7 @@
 {/snippet}
 
 <!-- mini card snippet -->
-{#snippet miniCard({ image, title, author })}
+{#snippet miniCard({ image, date, title, author })}
 	<div
 		class="max-w-1/4 mymd:max-w-1/2 duration-900 group relative flex transform flex-col justify-start transition-transform hover:-translate-y-7"
 	>
@@ -54,6 +57,7 @@
 		></div>
 		<img src={image} alt={title} class="brightness-50" />
 		<div class="absolute top-[70%] h-fit w-full px-10 group-hover:opacity-75">
+			<p class="text-sm font-thin text-white">{date}</p>
 			<h1 class="text-xl font-bold text-white">{title}</h1>
 			<p class="text-sm font-thin text-white">by {author}</p>
 			<Separator class="my-3 bg-gray-500" />
@@ -83,6 +87,11 @@
 
 <main class="flex w-full flex-col items-center justify-center">
 	{@render bigBackground(mountainBackground)}
+	<div class="grid w-full grid-cols-4 mymd:grid-cols-2">
+		{#each cardsList as cardItem}
+			{@render miniCard(cardItem)}
+		{/each}
+	</div>
 </main>
 
 <style>
