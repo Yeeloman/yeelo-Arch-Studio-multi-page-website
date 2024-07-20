@@ -58,7 +58,7 @@
 		<img src={image} alt={title} class="brightness-50" />
 		<div class="absolute top-[70%] h-fit w-full px-10 group-hover:opacity-75">
 			<p class="text-sm font-thin text-white">{date}</p>
-			<h1 class="text-xl font-bold text-white">{title}</h1>
+			<h1 class="text-md font-bold text-white">{title}</h1>
 			<p class="text-sm font-thin text-white">by {author}</p>
 			<Separator class="my-3 bg-gray-500" />
 			<a href="#" class="flex items-center justify-between">
