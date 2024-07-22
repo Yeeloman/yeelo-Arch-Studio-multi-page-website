@@ -51,7 +51,7 @@
 		<div
 			class="invisible absolute bottom-0 z-[9999] h-[0.5rem] w-full bg-gradient-to-r from-[#5a77ff] via-[#bc7198] to-[#ffc593] group-hover:visible"
 		></div>
-		<img src={image} alt={title} class="brightness-50" />
+		<img src={image} alt={title} class="brightness-50 group-hover:grayscale-[40%]" />
 		<div class="absolute top-[70%] h-fit w-full px-10 group-hover:opacity-75">
 			<h1 class="text-xl font-bold text-white">{title}</h1>
 			<p class="text-sm font-thin text-white">by {author}</p>

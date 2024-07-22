@@ -69,12 +69,54 @@ export const load: PageLoad = () => {
         title: "The Trip to Nowhere",
         author: "Felicia Rourke",
       },
-      // {
-      //   image: ,
-      //   date: "",
-      //   title: "",
-      //   author: "",
-      // },
+      {
+        image: seaRage,
+        date: "March 19th 2020",
+        title: "Rage of The Sea",
+        author: "Mohammed Abdul",
+      },
+      {
+        image: bojack,
+        date: "March 16th 2020",
+        title: "Running Free",
+        author: "Michelle",
+      },
+      {
+        image: behindWaves,
+        date: "March 11th 2020",
+        title: "Behind The Waves",
+        author: "Lamarr Wilson",
+      },
+      {
+        image: calmWater,
+        date: "March 9th 2020",
+        title: "Calm Waters",
+        author: "Samantha Brooke",
+      },
+      {
+        image: milkyWay,
+        date: "March 5th 2020",
+        title: "The Milky Way",
+        author: "Benjamin Cruz",
+      },
+      {
+        image: darkForst,
+        date: "March 4th 2020",
+        title: "Night at The Dark Forest",
+        author: "Mohammed Abdul",
+      },
+      {
+        image: flower,
+        date: "March 1st 2020",
+        title: "Somwarpet’s Beauty",
+        author: "Michelle",
+      },
+      {
+        image: dreamland,
+        date: "February 25th 2020",
+        title: "Land of Dreams",
+        author: "William Malcolm",
+      },
     ]
   }
 }
