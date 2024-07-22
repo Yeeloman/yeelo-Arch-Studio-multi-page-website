@@ -30,8 +30,9 @@
 		<div class="flex w-full items-center justify-between mymd:hidden">
 			<nav class="space-x-7 text-sm font-semibold">
 				<a href="/stories" class="duration-600 transition ease-in-out hover:opacity-30">STORIES</a>
-				<a href="#" class="duration-600 transition ease-in-out hover:opacity-30">FEATURES</a>
-				<a href="#" class="duration-600 transition ease-in-out hover:opacity-30">PRICING</a>
+				<a href="/features" class="duration-600 transition ease-in-out hover:opacity-30">FEATURES</a
+				>
+				<a href="/pricings" class="duration-600 transition ease-in-out hover:opacity-30">PRICING</a>
 			</nav>
 			<Button variant="default" size="default" class="rounded-none">GET AN INVITE</Button>
 		</div>
@@ -55,9 +56,15 @@
 					class="absolute left-0 top-20 z-[9999] hidden min-h-screen w-full flex-col items-center justify-center gap-9 bg-white mymd:flex"
 				>
 					<nav class="flex flex-col items-center justify-center gap-7 text-4xl font-semibold">
-						<a href="#" class="duration-600 transition ease-in-out hover:opacity-30">STORIES</a>
-						<a href="#" class="duration-600 transition ease-in-out hover:opacity-30">FEATURES</a>
-						<a href="#" class="duration-600 transition ease-in-out hover:opacity-30">PRICING</a>
+						<a href="/stories" class="duration-600 transition ease-in-out hover:opacity-30"
+							>STORIES</a
+						>
+						<a href="/features" class="duration-600 transition ease-in-out hover:opacity-30"
+							>FEATURES</a
+						>
+						<a href="/pricings" class="duration-600 transition ease-in-out hover:opacity-30"
+							>PRICING</a
+						>
 					</nav>
 					<Separator class="w-[80%] bg-mygray-dark" />
 					<Button variant="default" class="w-[80%] rounded-none p-7 text-2xl">GET AN INVITE</Button>
@@ -95,10 +102,11 @@
 			<nav
 				class="flex flex-col items-start justify-center gap-5 text-sm font-semibold text-white mymd:items-center"
 			>
-				<a href="#" class="duration-600 transition ease-in-out hover:opacity-30">home</a>
-				<a href="#" class="duration-600 transition ease-in-out hover:opacity-30">Stories</a>
-				<a href="#" class="duration-600 transition ease-in-out hover:opacity-30">Features</a>
-				<a href="#" class="duration-600 transition ease-in-out hover:opacity-30">Pricing</a>
+				<a href="/" class="duration-600 transition ease-in-out hover:opacity-30">home</a>
+				<a href="/stories" class="duration-600 transition ease-in-out hover:opacity-30">Stories</a>
+				<a href="/features" class="duration-600 transition ease-in-out hover:opacity-30">Features</a
+				>
+				<a href="/pricings" class="duration-600 transition ease-in-out hover:opacity-30">Pricing</a>
 			</nav>
 		</div>
 		<div class="w-full">
