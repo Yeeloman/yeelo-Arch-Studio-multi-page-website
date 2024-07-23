@@ -7,6 +7,7 @@ const buttonVariants = tv({
   variants: {
     variant: {
       default: "bg-black text-white hover:bg-mygray-dark hover:text-black transition duration-600 ease-in",
+      revDef: "bg-white text-black hover:bg-gray-300 transition duration-600 ease-out",
       destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90",
       outline:
         "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
@@ -16,6 +17,7 @@ const buttonVariants = tv({
     },
     size: {
       default: "h-10 px-5 py-4",
+      price: "w-[90%] py-3 rounded-none",
       sm: "h-9 rounded-md px-3",
       lg: "h-11 rounded-md px-8",
       icon: "h-10 w-10",
