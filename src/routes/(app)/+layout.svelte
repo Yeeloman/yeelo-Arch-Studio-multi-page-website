@@ -39,8 +39,8 @@
 		<div class="hidden flex-col mymd:flex">
 			<Button variant="ghost" size="icon" class="relative" onclick={toggleMenu}>
 				<div
-					class="absolute h-1 w-8 rounded bg-black transition-all duration-100 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-black before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-black after:transition-all after:duration-500 after:content-[''] {isOpen
-						? 'rotate-[720deg] bg-transparent before:translate-y-0 before:rotate-45 after:translate-y-0 after:-rotate-45'
+					class="absolute h-1 w-8 rounded bg-black transition-all duration-500 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-black before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-gradient-to-r after:from-[#5a77ff] after:via-[#bc7198] after:to-[#ffc593] after:transition-all after:duration-200 after:content-[''] {isOpen
+						? 'rotate-[855deg] before:translate-y-0  before:rotate-90 before:bg-gradient-to-r before:from-[#5a77ff] before:via-[#bc7198] before:to-[#ffc593] after:invisible'
 						: ''}"
 				></div>
 			</Button>
